@@ -8,7 +8,7 @@ class ExpressionEngineInstaller extends BaseInstaller
     protected $webroot = 'public/';
 
     protected $locations = array(
-        'addon'   => "{$this->system}user/addons/{\$name}/",
-        'theme'   => "{$this->webroot}themes/user/{\$name}/",
+        'addon'   => $this->system .'user/addons/{$name}/',
+        'theme'   => $this->webroot.'themes/user/{$name}/',
     );
 }
